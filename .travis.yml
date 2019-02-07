@@ -1,0 +1,9 @@
+language: node_js
+node_js: "11"
+before_deploy: "echo 'ready?'"
+deploy:
+  provider: npm
+  email: "simone.busoli@gmail.com"
+  api_key: $NPM_TOKEN
+  on:
+    tags: true
