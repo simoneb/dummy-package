@@ -2,10 +2,7 @@ language: node_js
 node_js: "11"
 deploy:
   provider: script
-  script: 
-    - OTP=$(curl https://my-otp.herokuapp.com/api/generate/$MY_OTP_TOKEN)
-    - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
-    - npm publish --otp $OTP
+  script: deploy.sh
   skip_cleanup: true
   on:
     tags: true
