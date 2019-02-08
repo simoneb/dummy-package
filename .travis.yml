@@ -1,11 +1,7 @@
 language: node_js
 node_js: "11"
-before_deploy: 
-  - OTP=$(curl https://my-otp.herokuapp.com/api/generate/$MY_OTP_TOKEN)
 deploy:
   provider: script
-  script: 
-    - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
-    - npm publish --otp $OTP
+  script: bash deploy.sh
   on:
     tags: true
