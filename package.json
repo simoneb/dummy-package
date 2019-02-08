@@ -1,6 +1,6 @@
 {
   "name": "@simoneb/dummy-package",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "scripts": {
     "test": "node index"
   },
