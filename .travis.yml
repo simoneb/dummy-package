@@ -6,6 +6,6 @@ deploy:
   provider: script
   script: 
     - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
-    - npm publish
-  # on:
-  #  tags: true
+    - npm publish --otp $OTP
+  on:
+    tags: true
