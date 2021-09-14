@@ -8,9 +8,6 @@
     "type": "git",
     "url": "https://github.com/simoneb/dummy-package.git"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
     "axios": "^0.21.4"
   }
